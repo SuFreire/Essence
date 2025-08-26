@@ -212,9 +212,8 @@
     <div class="max-w-6xl mx-auto text-center">
         <h2 class="font-lora text-4xl font-bold text-white mb-6 section-title" data-pt="Elegância Contemporânea com Alma Tradicional" data-en="Contemporary Elegance with a Traditional Soul">Elegância Contemporânea com Alma Tradicional</h2>
         <p class="text-xl text-gray-400 text-center leading-relaxed max-w-4xl mx-auto mb-12" data-pt="ESSENCE é um empreendimento exclusivo que harmoniza a tradição arquitetónica do Porto com um design contemporâneo. Desfrute de uma experiência de habitação requintada, com acabamentos de alta qualidade, vistas deslumbrantes e uma envolvente paisagística." data-en="Essence is an exclusive residential development that harmonizes Porto's architectural tradition with contemporary design. Enjoy a refined living experience, with high-quality finishes, stunning views, and a beautiful surrounding landscape.">Essence é um empreendimento exclusivo que harmoniza a tradição arquitetónica do Porto com um design contemporâneo. Desfrute de uma experiência de habitação requintada, com acabamentos de alta qualidade, vistas deslumbrantes e uma envolvente paisagística.</p>
-        <p class="text-xl text-gray-400 text-center leading-relaxed max-w-4xl mx-auto mb-12">
-            Composto por 84 apartamentos, o Essence oferece tipologias que vão desde os T0 aos T4 com terraço, com áreas (privativas + terraços/varandas) que variam entre 44m² e 298m².
-            Os espaços foram cuidadosamente concebidos para garantir conforto, funcionalidade e sofisticação, destacando-se pelas amplas varandas e pela seleção criteriosa de materiais de elevada qualidade.
+        <p class="text-xl text-gray-400 text-center leading-relaxed max-w-4xl mx-auto mb-12"
+           data-pt="O Essence dispõe de 84 apartamentos exclusivos, do T0 ao T4 com terraço, com áreas entre 44m² e 298m². Cada espaço foi projetado para oferecer conforto, funcionalidade e sofisticação, destacando-se pelas amplas varandas e pela seleção cuidadosa de materiais premium, garantindo uma experiência de habitação verdadeiramente excecional." data-en="Essence comprises 84 exquisite apartments, offering layouts from stylish studios (T0) to spacious T4 residences with private terraces. Interiors and terraces range from 44m² to 298m², thoughtfully designed to combine comfort, functionality, and elegance. Every detail reflects sophistication, from expansive balconies to the careful selection of premium materials, creating a living experience that is truly exceptional."
         </p>
     </div>
 </section>
@@ -394,72 +393,83 @@
 </footer>
 
 <script>
-    const galleryImages = [
-        'https://ik.imagekit.io/ij9blp5q7/Facade_Block_A_1.jpg?updatedAt=1755706455933',
-        'https://ik.imagekit.io/ij9blp5q7/02_Garden_A.jpg?updatedAt=1755704907493',
-        'https://ik.imagekit.io/ij9blp5q7/T4_Living%20Room.jpg?updatedAt=1755704797767',
-        'https://ik.imagekit.io/ij9blp5q7/T3_Kitchen.jpg?updatedAt=1755704801408',
-        'https://ik.imagekit.io/ij9blp5q7/T3_Suite.jpg?updatedAt=1755729119520',
-        'https://ik.imagekit.io/ij9blp5q7/T4_Suite.jpg?updatedAt=1755729204989',
-        'https://ik.imagekit.io/ij9blp5q7/T4_Bathroom.jpg?updatedAt=1755729211084',
-        'https://ik.imagekit.io/ij9blp5q7/06_Rooftop_01.jpg?updatedAt=1755704907258',
-        'https://ik.imagekit.io/ij9blp5q7/06_Rooftop_02.jpg?updatedAt=1755704918801',
-        'https://ik.imagekit.io/ij9blp5q7/Facade_Block_A_2.jpg?updatedAt=1755706458986',
-        'https://ik.imagekit.io/ij9blp5q7/Block_A+B_View.jpg?updatedAt=1755715153179',
-    ];
+const galleryImages = [
+    { src: 'https://ik.imagekit.io/ij9blp5q7/Facade_Block_A_1.jpg?tr=f-webp,q-70,w-1200', alt: 'Fachada principal do ESSENCE, Porto', title: 'Apartamento T0 no ESSENCE, Porto' },
+    { src: 'https://ik.imagekit.io/ij9blp5q7/02_Garden_A.jpg?tr=f-webp,q-70,w-1200', alt: 'Vista do jardim do ESSENCE', title: 'Áreas verdes do ESSENCE' },
+    { src: 'https://ik.imagekit.io/ij9blp5q7/T4_Living%20Room.jpg?tr=f-webp,q-70,w-1200', alt: 'Sala de estar de apartamento T4', title: 'Apartamento T4, sala de estar' },
+    { src: 'https://ik.imagekit.io/ij9blp5q7/T3_Kitchen.jpg?tr=f-webp,q-70,w-1200', alt: 'Cozinha moderna de apartamento T3', title: 'Apartamento T3, cozinha equipada' },
+    { src: 'https://ik.imagekit.io/ij9blp5q7/T3_Suite.jpg?tr=f-webp,q-70,w-1200', alt: 'Suíte elegante de apartamento T3', title: 'Apartamento T3, suíte principal' },
+    { src: 'https://ik.imagekit.io/ij9blp5q7/T4_Suite.jpg?tr=f-webp,q-70,w-1200', alt: 'Suíte de apartamento T4 com varanda', title: 'Apartamento T4, suíte com varanda' },
+    { src: 'https://ik.imagekit.io/ij9blp5q7/T4_Bathroom.jpg?tr=f-webp,q-70,w-1200', alt: 'Casa de banho moderna T4', title: 'Apartamento T4, casa de banho' },
+    { src: 'https://ik.imagekit.io/ij9blp5q7/06_Rooftop_01.jpg?tr=f-webp,q-70,w-1200', alt: 'Rooftop com vistas panorâmicas', title: 'Rooftop ESSENCE' },
+    { src: 'https://ik.imagekit.io/ij9blp5q7/06_Rooftop_02.jpg?tr=f-webp,q-70,w-1200', alt: 'Rooftop com área de lazer', title: 'Rooftop ESSENCE, lazer' },
+    { src: 'https://ik.imagekit.io/ij9blp5q7/Facade_Block_A_2.jpg?tr=f-webp,q-70,w-1200', alt: 'Vista lateral do bloco A', title: 'Bloco A, ESSENCE' },
+    { src: 'https://ik.imagekit.io/ij9blp5q7/Block_A+B_View.jpg?tr=f-webp,q-70,w-1200', alt: 'Vista dos blocos A e B do ESSENCE', title: 'Blocos A+B, ESSENCE' }
+];
 
-    let currentImage = 0;
-    const totalImages = galleryImages.length;
-    let currentLanguage = 'pt';
-    
-    const galleryTrack = document.getElementById('galleryTrack');
-    const galleryThumbnails = document.getElementById('galleryThumbnails');
+let currentImage = 0;
+const totalImages = galleryImages.length;
 
-    function updateGallery() {
-        galleryTrack.style.transform = `translateX(-${currentImage * 100}%)`;
-        updateThumbnails();
-    }
+const galleryTrack = document.getElementById('galleryTrack');
+const galleryThumbnails = document.getElementById('galleryThumbnails');
 
-    function nextImage() {
-        currentImage = (currentImage + 1) % totalImages;
-        updateGallery();
-    }
+function updateGallery() {
+    galleryTrack.style.transform = `translateX(-${currentImage * 100}%)`;
+    updateThumbnails();
+}
 
-    function previousImage() {
-        currentImage = (currentImage - 1 + totalImages) % totalImages;
-        updateGallery();
-    }
+function nextImage() {
+    currentImage = (currentImage + 1) % totalImages;
+    updateGallery();
+}
 
-    function goToImage(index) {
-        currentImage = index;
-        updateGallery();
-    }
+function previousImage() {
+    currentImage = (currentImage - 1 + totalImages) % totalImages;
+    updateGallery();
+}
 
-    function createGalleryElements() {
-        galleryImages.forEach((src, index) => {
-            const img = document.createElement('img');
-            img.src = src;
-            img.alt = `Gallery Image ${index + 1}`;
-            img.className = 'gallery-item w-full object-cover';
-            img.onerror = function() { this.src=''; this.alt='Imagem não disponível'; this.style.display='none'; };
-            galleryTrack.appendChild(img);
-            
-            const thumb = document.createElement('img');
-            thumb.src = src;
-            thumb.alt = `Thumbnail ${index + 1}`;
-            thumb.className = 'gallery-thumbnail rounded-md';
-            thumb.onclick = () => goToImage(index);
-            thumb.onerror = function() { this.src=''; this.alt='Miniatura não disponível'; this.style.display='none'; };
-            galleryThumbnails.appendChild(thumb);
-        });
-    }
+function goToImage(index) {
+    currentImage = index;
+    updateGallery();
+}
 
-    function updateThumbnails() {
-        const thumbnails = document.querySelectorAll('.gallery-thumbnail');
-        thumbnails.forEach((thumb, index) => {
-            thumb.classList.toggle('active', index === currentImage);
-        });
-    }
+function createGalleryElements() {
+    galleryImages.forEach((imgData, index) => {
+        // imagem principal
+        const img = document.createElement('img');
+        img.src = imgData.src;
+        img.alt = imgData.alt;
+        img.title = imgData.title;
+        img.className = 'gallery-item w-full object-cover';
+        img.loading = 'lazy';
+        galleryTrack.appendChild(img);
+
+        // miniatura
+        const thumb = document.createElement('img');
+        thumb.src = imgData.src;
+        thumb.alt = imgData.alt;
+        thumb.title = imgData.title;
+        thumb.className = 'gallery-thumbnail rounded-md';
+        thumb.loading = 'lazy';
+        thumb.onclick = () => goToImage(index);
+        galleryThumbnails.appendChild(thumb);
+    });
+}
+
+function updateThumbnails() {
+    const thumbnails = document.querySelectorAll('.gallery-thumbnail');
+    thumbnails.forEach((thumb, index) => {
+        thumb.classList.toggle('active', index === currentImage);
+    });
+}
+
+// autoplay
+setInterval(nextImage, 5000);
+
+document.addEventListener('DOMContentLoaded', function() {
+    createGalleryElements();
+    updateGallery();
+});      
 
     function switchLanguage(lang) {
         currentLanguage = lang;
@@ -538,6 +548,16 @@
 </script>
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
 
 
 
